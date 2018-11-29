@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/msg/index",
+    "pages/home/index",
+    "pages/list/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/details/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "积云信息平台",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance":80
+  }
+}

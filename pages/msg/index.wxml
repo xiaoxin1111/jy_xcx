@@ -1,0 +1,7 @@
+<view class = 'title'>
+  就业信息查询表
+</view>
+<view class = 'search_box'>
+  <input type = 'text' class='search' onmouseup = 'search_value'/>
+  <icon type = 'search' bindtap='search'/>
+</view>

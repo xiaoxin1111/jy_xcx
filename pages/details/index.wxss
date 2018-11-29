@@ -1,0 +1,27 @@
+/* pages/details/index.wxss */
+page{
+  margin-top:100rpx;
+}
+page .title{
+  display:inline-block;
+  font-size:72rpx;
+  color:#222;
+  margin-right:32rpx;
+}
+.author{
+  font-size:24rpx;
+  color:#aaa;
+  text-align:right;
+  margin-right:70rpx;
+  margin-top:70rpx;
+  margin-bottom:30rpx;
+}
+.box{
+  margin-left:70rpx;
+}
+.content{
+  padding:40rpx 70rpx;
+  line-height:35px;
+  font-size:30rpx;
+  text-indent:2em;
+}

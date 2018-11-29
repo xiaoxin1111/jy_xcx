@@ -1,0 +1,69 @@
+.logo{
+  float:right;
+  margin-right:40rpx;
+  margin-top:-40rpx;
+}
+.title{
+  clear:both;
+  padding-top:40rpx;
+  font-size:40rpx;
+  color:#222;
+  margin-left:60rpx;
+}
+.box{
+  text-align: center;
+}
+.inp{
+  border-bottom:solid 1px #EEE;
+  width:350rpx;
+  float:left;
+  text-align:left;
+}
+input{
+  line-height:70rpx;
+  height:70rpx;
+  font-size:32rpx;
+  line-height:70rpx;
+  margin-top:8rpx;
+  padding:0 20rpx;
+  box-sizing:border-box;
+}
+label{
+  float:left;
+  width:112rpx;
+  text-align:right;
+  font-size:32rpx;
+  position:relative;
+  top:20rpx;
+  color:#222;
+}
+.inp_box{
+  overflow:hidden;
+  margin-top:25rpx;
+  height:70rpx;
+  width:600rpx;
+  margin:0 auuto;
+  margin-left:130rpx;
+  height:80rpx;
+}
+.move_center{
+  text-align: center;
+  margin-top:100rpx;
+}
+.btn_login{
+  background-color:#26F;
+  color:#FFF;
+  width:200rpx;
+  height:70rpx;
+  border:none;
+  border-radius:5px;
+  line-height:70rpx;
+  margin-top:45rpx;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+.logo_img{
+  width:200rpx;
+  height:120rpx;
+}

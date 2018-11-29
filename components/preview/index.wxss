@@ -1,0 +1,12 @@
+.box{
+  margin-left:10rpx;
+  overflow:hidden;
+  height:120rpx;
+  padding-bottom:20rpx;
+  position:relative;
+}
+.box_content{
+  font-size:32rpx;
+  color:#333;
+  width:640rpx;
+}

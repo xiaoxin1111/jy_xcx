@@ -1,0 +1,23 @@
+<view class = 'box'>
+  <view class = 'title'>
+    积云信息平台市场专用
+    <view class = 'logo'>
+      <image src = '/static/images/logo.png' class = 'logo_img'/>
+    </view>
+  </view>
+  <view class = 'move_center'> 
+    <view class = 'inp_box'>
+      <label>姓名:</label>
+      <input type='text' class = 'inp'/>
+    </view>
+    <view class = 'inp_box'>
+      <label>手机号:</label>
+      <input maxlength='11' type='text' class = 'inp'/>
+    </view>
+    <view class = 'inp_box'>
+      <label>密码:</label>
+      <input type='text' class = 'inp'/>  
+    </view>
+  </view>
+</view>
+  <button size = 'mini' class = 'btn_login' bindtap='login'>登入</button>

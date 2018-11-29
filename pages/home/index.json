@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-title": "/components/title/index",
+    "component-preview":"/components/preview/index"
+  }
+}

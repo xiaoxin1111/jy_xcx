@@ -1,0 +1,6 @@
+.msg{
+  height:70rpx;
+  line-height:70rpx;
+  font-size:30rpx;
+  text-align: center;
+}

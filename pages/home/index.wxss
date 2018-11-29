@@ -1,0 +1,59 @@
+.center{
+  text-align: center;
+  width:100%;
+  height:70rpx;
+  line-height:70rpx;
+  background-color:#A00;
+  color:#FFF;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:9999999;
+}
+page{
+  padding-top:70rpx;
+}
+swiper image{
+  width:100%;
+}
+.ul_logo{
+  display:flex;
+  flex-wrap:wrap;
+  padding:10rpx 20rpx;
+  width:100%;
+  box-sizing:border-box;
+}
+.li_logo{
+  width:20%;
+  text-align: center;
+  float:left;
+  margin:0rpx 0rpx;
+}
+.li_logo image{
+  width:128rpx;
+  height:128rpx;
+}
+.li_logo .text{
+  margin-top:-10rpx;
+  font-size:32rpx;
+  color:#666;
+}
+.swiper_class{
+  height:64rpx;
+  margin-left:10rpx;
+  width:90%;
+  display:inline-block;
+  line-height:64rpx;
+  color:#A00;
+  font-size:42rpx;
+}
+text{
+  position:absolute;
+  right:30rpx;
+  font-size:24rpx;
+  color:#26f;
+  float:right;
+  top:50%;
+  margin-top:-30rpx;
+  display:inline-block;
+}

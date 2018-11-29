@@ -1,0 +1,6 @@
+<view>
+  {{title}}
+</view>
+<view class = 'msg' wx:for = '{{list}}' wx:for-item="item" bindtap='det' wx:for-index="index" data-index="{{index}}">
+  {{item}}
+</view>
