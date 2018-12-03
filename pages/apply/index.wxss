@@ -1,0 +1,29 @@
+.inp,.time{
+  margin:0 auto;
+  border-bottom:solid 1px #AAA;
+  height:90rpx;
+  padding-left:2em;
+  box-sizing:border-box;
+  line-height:90rpx;
+  overflow:hidden;
+  color:#222;
+}
+.title{
+  text-align: center;
+  margin:30rpx;
+}
+.btn{
+  background-color:#080;
+  line-height:90rpx;
+  color:#FFF;
+  border-radius:10rpx;
+}
+.she{
+  color:#F0F;
+  font-weight:bold;
+}
+.man{
+  color:#26F;
+  font-weight:bold;
+  margin:0 40rpx;
+}

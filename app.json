@@ -1,11 +1,16 @@
 {
   "pages":[
-    "pages/msg/index",
-    "pages/home/index",
-    "pages/list/index",
     "pages/index/index",
+    "pages/sign_up/index",
+    "pages/home/index",
+    "pages/apply/index",
+    "pages/list/index",
+    "pages/msg/index",
     "pages/logs/logs",
-    "pages/details/index"
+    "pages/details/index",
+    "pages/show/index",
+    "pages/organ/index",
+    "pages/sign_up/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,6 +19,6 @@
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "dark",
-    "onReachBottomDistance":80
+    "onReachBottomDistance":50
   }
 }

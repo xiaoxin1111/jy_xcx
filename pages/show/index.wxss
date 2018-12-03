@@ -1,0 +1,33 @@
+page>view{
+  line-height:70rpx;
+  font-size:32rpx;
+}
+page>view:nth-child(2n + 1){
+  background-color:#F5F5F5;
+  color:#111;
+}
+page>view:nth-child(2n){
+  background-color:#F5F5F5;
+  color:#111;
+}
+page>view:nth-child(1){
+  background-color:#26F;
+  color:#FFF;
+}
+.table,.tr>view{
+  width:100%;
+  display:flex;
+}
+.table view,.tr>view>view{
+  width:25%;
+  text-align: center;
+}
+
+.tr>view:nth-child(2){
+  margin-left:60rpx;
+  min-width:0rpx;
+  display:inline-block;
+  width:650rpx;
+  overflow:hidden;
+  font-size:26rpx;
+}

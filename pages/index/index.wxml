@@ -8,15 +8,15 @@
   <view class = 'move_center'> 
     <view class = 'inp_box'>
       <label>姓名:</label>
-      <input type='text' class = 'inp'/>
+      <input type='text' class = 'inp' bindinput="userChange"/>
     </view>
     <view class = 'inp_box'>
       <label>手机号:</label>
-      <input maxlength='11' type='text' class = 'inp'/>
+      <input maxlength='11' type='text' class = 'inp' bindinput="phomeChange"/>
     </view>
     <view class = 'inp_box'>
       <label>密码:</label>
-      <input type='text' class = 'inp'/>  
+      <input type='text' class = 'inp' bindinput="passChange" password/>  
     </view>
   </view>
 </view>

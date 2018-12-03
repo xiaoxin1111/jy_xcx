@@ -1,0 +1,31 @@
+.image{
+  width:152rpx;
+  height:152rpx;
+  float:left;
+  margin-right:30rpx;
+}
+.box{
+  padding:15rpx 10rpx;
+  border:solid 1px #EEE;
+  overflow:hidden;
+  position:relative;
+}
+.text{
+  float:left;
+}
+.user{
+  margin:25rpx 0 20rpx 0;
+  font-size:24rpx;
+  line-height:25rpx;
+}
+.content{
+  font-size:24rpx;
+  line-height:25rpx;
+}
+.timer{
+  position:absolute;
+  font-size:20rpx;
+  color:#AAA;
+  right:10rpx;
+  bottom:10rpx;
+}

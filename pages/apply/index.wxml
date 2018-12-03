@@ -1,0 +1,35 @@
+<view class = 'title'>预报名学生信息</view>
+<view>
+    <input type="number" bindinput="setName" placeholder=' 姓名' class = 'inp'/>
+    <input type="number" bindinput="setCard" placeholder='身份证' class = 'inp'/>
+    <input type="number" bindinput="setPhome" placeholder='电话' class = 'inp'/>
+</view>
+<view class="section">
+  <!--日期-->
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+    <view class="picker" class ='time'>
+      请选择日期: {{date}}
+    </view>
+  </picker>
+  <!--学历-->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" class ='time'>
+      选择学历：{{array[index]}}
+    </view>
+  </picker>
+  <!--招生老师-->
+  <picker bindchange="bindTeacherChange" value="{{index}}" range="{{teacher}}">
+    <view class="picker" class ='time'>
+      招生老师:{{indexs != "请选择"?teacher[indexs]:"请选择"}}
+    </view>
+  </picker>
+</view>
+<radio-group class="radio-group" bindchange="radioChange" style = 'margin-left:75rpx;padding:40rpx 0;'>
+  性别:<label class="radio" class = 'man'>
+    <radio value="1" checked/>♂
+  </label>
+  <label class="radio" class = 'she'>
+    <radio value="2"/>♀
+  </label>
+</radio-group>
+<button class = 'btn' bindtap='send'>报名</button>

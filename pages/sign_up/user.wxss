@@ -1,0 +1,37 @@
+.tr{
+  width:100%;
+  display:flex;
+}
+.tr>view{
+  width:33.3%;
+  text-align: center;
+  line-height:120rpx;
+  font-size:30rpx;
+}
+page{
+  background-color:#F5F5F5;
+}
+view>button{
+  width:150rpx;
+  font-size:30rpx;
+  height:70rpx;
+  line-height:70rpx;  
+  letter-spacing:10rpx;
+  margin-top:25rpx;
+}
+page>button{
+  position:fixed;
+  top:0;
+  height:90rpx;
+  width:100%;
+  z-index:100000;
+}
+page{
+  padding-top:90rpx;
+}
+.tr{
+
+}
+.tr{
+  background-color:#F5F5F5;
+}

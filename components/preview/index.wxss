@@ -1,7 +1,7 @@
 .box{
   margin-left:10rpx;
   overflow:hidden;
-  height:120rpx;
+  height:180rpx;
   padding-bottom:20rpx;
   position:relative;
 }
@@ -9,4 +9,9 @@
   font-size:32rpx;
   color:#333;
   width:640rpx;
+  height:60rpx;
+  overflow:hidden;
+  line-height:60rpx;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }

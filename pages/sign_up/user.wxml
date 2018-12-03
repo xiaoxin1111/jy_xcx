@@ -1,0 +1,11 @@
+<button bindtap='add'>添加学生</button>
+<view class = 'tr'>
+  <view>姓名</view>
+  <view>手机号</view>
+  <view>操作</view>
+</view>
+<view class = 'tr' wx:for = '{{data}}' wx:for-item = 'item' wx:for-index = "index" class = 'tr'>
+  <view>{{item.username}}</view>
+  <view>{{item.tel}}</view>
+  <view><button bindtap='click' data-index = "{{index}}">查看</button></view>
+</view>

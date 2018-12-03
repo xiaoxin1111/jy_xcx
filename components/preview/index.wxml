@@ -1,6 +1,6 @@
 <view class = 'box'>
     <text bindtap = 'more'>more</text>
     <view wx:for = '{{data}}' wx:for-item="item" class = 'box_content'>
-      {{item}}
+      {{item.bt}} - {{item.username}}
     </view>
   </view>

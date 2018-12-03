@@ -37,6 +37,7 @@ swiper image{
   margin-top:-10rpx;
   font-size:32rpx;
   color:#666;
+  font-size:22rpx;
 }
 .swiper_class{
   height:64rpx;

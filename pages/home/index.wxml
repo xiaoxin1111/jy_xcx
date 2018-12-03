@@ -1,5 +1,5 @@
 <view>
-  <view class= 'center'>{{name}}欢迎您登入</view>
+  <view class= 'center'>{{name}}欢迎您登录</view>
     <swiper indicator-dots="true" indicator-color = "rgba(0,0,0,.5)" indicator-active-color = "#26f"
     autoplay="true" interval="2000" duration="1000">
       <swiper-item>
@@ -13,25 +13,25 @@
       </swiper-item>
 </swiper>
   <view class = 'ul_logo'>
-    <view class = 'li_logo' wx:for = "{{images}}" wx:for-item="item">
+    <view class = 'li_logo' wx:for = "{{images}}" wx:for-item="item" bindtap='fun' wx:for-index = "index" data-index = "{{index}}">
       <image src = '{{item.imgSrc}}'/>
       <view class = 'text'>{{item.text}}</view>
     </view>
   </view>
   
-  <component-title>公告</component-title>
-  <!--公告-->
-  <component-preview data = "{{notice}}" type = "0"></component-preview>
+  <component-title>通知</component-title>
+  <!--通知-->
+  <component-preview data = "{{listData_inform}}" type = "0"></component-preview>
   
   <component-title>新闻</component-title>
   <!--新闻-->
-  <component-preview data = "{{news}}" type = "1"></component-preview>
+  <component-preview data = "{{listData_news}}" type = "1"></component-preview>
 
   <component-title>优惠</component-title>
   <!--优惠-->
-  <component-preview data = "{{activity}}" type = "2"></component-preview>
+  <component-preview data = "{{listData_activity}}" type = "2"></component-preview>
 
   <component-title>政策制度</component-title>
   <!--政策制度-->
-  <component-preview data = "{{system}}" type = "3"></component-preview>
+  <component-preview data = "{{listData_system}}" type = "3"></component-preview>
 </view>

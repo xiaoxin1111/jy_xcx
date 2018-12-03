@@ -1,6 +1,9 @@
+import { Request } from "../../model/request.js";
+var WxParse = require('../wxParse/wxParse.js');
+let Api = new Request();
 Page({
   data: {
-    name:"小鑫",
+    name:"",
     notice: [
       "第一条公告",
       "第二条公告",
@@ -24,23 +27,23 @@ Page({
     images:[
       {
         imgSrc: "/static/images/images.png",
-        text: "icon"
+        text: "工作喜报"
       },
       {
         imgSrc: "/static/images/images.png",
-        text: "icon"
+        text: "搜索学生"
       },
       {
         imgSrc: "/static/images/images.png",
-        text: "icon"
+        text: "举报投诉"
       },
       {
         imgSrc: "/static/images/images.png",
-        text: "icon"
+        text: "组织结构"
       },
       {
         imgSrc: "/static/images/images.png",
-        text: "icon"
+        text: "学生报名"
       },
       {
         imgSrc: "/static/images/images.png",
@@ -82,5 +85,88 @@ Page({
         text: "icon"
       },
     ],
+    listData_inform:[],
+    listData_news:[],
+    listData_activity:[],
+    listData_system:[]
   },
-})
+  fun(ev) {
+    let index = ev.currentTarget.dataset.index;
+    if (index == 0) { //工作喜报
+      wx.navigateTo({
+        url: '/pages/show/index',
+      })
+    } else if (index == 1) {  //搜索学生
+      wx.navigateTo({
+        url: '/pages/msg/index',
+      })
+    } else if (index == 2) {  //举报投诉
+      wx.navigateTo({
+        url: '/pages/list/index?type=4',
+      })
+    } else if (index == 3){   //组织结构
+      wx.navigateTo({
+        url: '/pages/organ/index',
+      })
+    }else if(index == 4){ //学生报名
+      wx.navigateTo({
+        url: '/pages/sign_up/user',
+      })
+    }
+  },
+  onLoad(){
+    Api.inform(0).then(res => {
+      let listData_inform = [];
+      let list = res.data.list.list.data;
+      for(let i = 0;i<3;i++){
+        listData_inform.push(list[i]);
+      }
+      this.setData({
+        listData_inform
+      })
+    })
+    Api.news(0).then(res => {
+      let listData_news = [];
+      let list = res.data.list.data;
+      for (let i = 0; i < 3; i++) {
+        listData_news.push(list[i]);
+      }
+      this.setData({
+        listData_news
+      })
+    });
+    Api.activity(0).then(res => {
+      let listData_activity = [];
+      let list = res.data.list.list.data;
+      for (let i = 0; i < 3; i++) {
+        listData_activity.push(list[i]);
+      }
+      this.setData({
+        listData_activity
+      })
+    })
+    Api.system(0).then(res => {
+      let listData_system = [];
+      let list = res.data.list.data;
+      console.log(list);
+      for (let i = 0; i < 3; i++) {
+        listData_system.push(list[i]);
+      }
+      this.setData({
+        listData_system
+      })
+    })
+    //读取个人信息
+    let _this = this;
+    wx.getStorage({
+      key: 'user',
+      success(res){
+        let data = JSON.parse(res.data);
+        console.log(data);
+        _this.setData({
+          name: data.name
+        })
+      }
+    })
+  }
+})  

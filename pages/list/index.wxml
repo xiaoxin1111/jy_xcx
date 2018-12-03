@@ -1,6 +1,14 @@
-<view>
+<view class ='title'>
   {{title}}
 </view>
-<view class = 'msg' wx:for = '{{list}}' wx:for-item="item" bindtap='det' wx:for-index="index" data-index="{{index}}">
-  {{item}}
+<view bindtap='det' class = 'msg' wx:for = '{{list}}' wx:for-item="item" bindtap='det' wx:for-index="index" data-index="{{index}}">
+  <view class = 'titles'>
+    {{item.bt}}
+  </view>
+  <view class = 'username'>
+    {{item.username}}
+  </view>
+  <view class = 'timer'>
+    {{item.date}}
+  </view>
 </view>

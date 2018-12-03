@@ -1,0 +1,10 @@
+<view>
+  <view bindtap='jump_msg' class = 'box' wx:for = "{{dataList}}" wx:for-item="item" wx:for-index = "index" data-index = "{{index}}">
+    <image src = '{{item.imgSrc}}' class = 'image'/>
+    <view class = 'text'>
+      <view class = 'user'>{{item.user}}</view>
+      <view class = "content">{{item.content}}</view>
+      <view class = 'timer'>{{item.timer}}</view>
+    </view>
+  </view>
+</view>

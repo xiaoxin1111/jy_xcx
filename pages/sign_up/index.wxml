@@ -1,0 +1,9 @@
+<view class = 'box_msg'>
+  <view>姓名:{{name}}</view>
+  <view>性别:{{sex == 1?'男':'女'}}</view>
+  <view>手机号:{{tel}}</view>
+  <view>身份证:{{card}}</view>
+  <view>学历:{{edu}}</view>
+  <view>入学时间:{{time}}</view>
+  <view>招生老师:{{teacher}}</view>
+</view>

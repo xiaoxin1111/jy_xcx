@@ -2,6 +2,19 @@
   就业信息查询表
 </view>
 <view class = 'search_box'>
-  <input type = 'text' class='search' onmouseup = 'search_value'/>
+  <input type="number" confirm-type = 'search' bindconfirm="search"  bindinput="search_value" placeholder='请搜索' type = 'text' class='search'/>
   <icon type = 'search' bindtap='search'/>
+</view>
+<view>
+  <view></view>
+</view>
+<view class = 'search_sea' wx:if = '{{data.length <= 0}}'>
+  还未搜索,清搜索
+</view>
+<view class = 'box_msg' wx:for = '{{data}}' wx:for-item = "item" wx:for-index = "index" data-index = "{{index}}">
+  <view>姓名:{{item.sname}}</view>
+  <view>是否就业:{{item.jstate}}</view>
+  <view>区域:{{item.saddress == ""?'暂时未录取地区':item.saddress}}</view>
+  <view>专业:{{item.bname}}</view>
+  <view>班级:{{item.cname}}</view>
 </view>

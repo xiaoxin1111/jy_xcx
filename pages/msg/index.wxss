@@ -1,6 +1,6 @@
 .search{
   width:440rpx;
-  border:solid 1px #EEE;
+  border:solid 1px #AAA;
   border-radius:100rpx;
   height:70rpx;
   line-height:70rpx;
@@ -17,10 +17,49 @@
 icon{
   position:absolute;
   top:50%;
-  transform: translateY(-50%);
+  transfrom: translateY(-50%);
   right:15rpx;
   z-index:99999;
 }
 .title{
   line-height:70rpx;
+  text-align: center;
+  color:#222;
+}
+.box_msg{
+  padding:30rpx 80rpx;
+  width:350rpx;
+  margin:0 auto;
+  margin-top:40rpx;
+  font-size:26rpx;
+  border:solid 1px #EEE;
+}
+.box_msg{
+  line-height:60rpx;
+  position:relative;
+  border:groove #999 15px;
+  background-color:#AAA;
+  color:#FFF;
+}
+page{
+  background:#F5F5F5;
+}
+.search_sea{
+  position:absolute;
+  top:50%;
+  left:50%;
+  font-size:24rpx;
+  letter-spacing:4rpx;
+  transform:translate(-50%);
+}
+.box_msg view{
+  overflow:hidden;
+}
+.box_msg view view:nth-child(1){
+  float:left;
+  font-size:26rpx;
+}
+.box_msg view view:nth-child(2){
+  float:right;
+  font-size:26rpx;
 }

@@ -1,0 +1,37 @@
+.box_msg{
+  padding:50rpx 80rpx;
+  width:400rpx;
+  margin:0 auto;
+  margin-top:40rpx;
+  font-size:26rpx;
+  border:solid 1px #EEE;
+}
+.box_msg{
+  line-height:60rpx;
+  position:relative;
+  border:groove #999 15px;
+  background-color:#AAA;
+  color:#FFF;
+}
+page{
+  background:#F5F5F5;
+}
+.search_sea{
+  position:absolute;
+  top:50%;
+  left:50%;
+  font-size:24rpx;
+  letter-spacing:4rpx;
+  transform:translate(-50%);
+}
+.box_msg view{
+  overflow:hidden;
+}
+.box_msg view view:nth-child(1){
+  float:left;
+  font-size:26rpx;
+}
+.box_msg view view:nth-child(2){
+  float:right;
+  font-size:26rpx;
+}

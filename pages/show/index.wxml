@@ -1,0 +1,15 @@
+<view class = 'table'>
+  <view>专业</view>
+  <view>班级</view>
+  <view>姓名</view>
+  <view>薪资</view>
+</view>
+<view class = 'tr' wx:for = "{{dataList}}">
+    <view>
+      <view>{{item.bname}}</view>
+      <view>{{item.cname}}</view>
+      <view>{{item.sname}}</view>
+      <view>{{item.jsalary}}</view>
+    </view>
+    <view>{{item.saddress}}</view>
+</view>
